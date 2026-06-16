@@ -1,0 +1,45 @@
+.gradle/
+/build/
+out/
+buildSrc/build/
+
+### Java Artifacts ###
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+*.launch
+*.factorypath
+
+### VS Code ###
+.vscode/
+
+### Environment & Sensitive Data ###
+.env
+.env.*
+*.local
+application-local.properties
+application-local.yml
+*.jks
+*.keystore
+
+### Logs ###
+*.log
+logs/
+
+### OS Files ###
+.DS_Store
+Thumbs.db
