@@ -43,3 +43,6 @@ logs/
 ### OS Files ###
 .DS_Store
 Thumbs.db
+
+
+app/src/main/java/com/irctc/localDb/users.json
