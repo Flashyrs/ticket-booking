@@ -6,18 +6,16 @@ import java.util.UUID;
 public class User {
     private String name;
     private String hashedPassword;
-    private String username;
-    private List<Ticket> bookedTickets;
+    private List<Ticket> ticketsBooked;
     private String userId;
     private String password;
 
-    public User(String name, String password, String hashedPassword, String username, List<Ticket> bookedTickets, String userId){
+    public User(String name, String password, String hashedPassword, List<Ticket> ticketsBooked, String userId){
         this.name = name;
         this.password = password;
         this.hashedPassword = hashedPassword;
-        this.username = username;
         this.userId = userId;
-        this.bookedTickets = bookedTickets;
+        this.ticketsBooked = ticketsBooked;
     }
 
     public User(){}
@@ -28,11 +26,8 @@ public class User {
     public String getHashedPassword(){
         return this.hashedPassword;
     }
-    public String getUserName(){
-        return this.username;
-    }
-    public List<Ticket> getBookedTickets(){
-        return this.bookedTickets;
+    public List<Ticket> getTicketsBooked(){
+        return this.ticketsBooked;
     }
     public String getUserId(){
         return this.userId;
@@ -42,9 +37,9 @@ public class User {
     }
 
     public void printTickets(){
-        int n = bookedTickets.size();
+        int n = ticketsBooked.size();
         for(int i = 0 ; i < n; i++){
-            System.out.println(bookedTickets.get(i).getTicketInfo());
+            System.out.println(ticketsBooked.get(i).getTicketInfo());
         }
     }
 
@@ -60,11 +55,8 @@ public class User {
     public void setHashedPassword(){
         this.hashedPassword = hashedPassword;
     }
-    public void setUsername(String username){
-        this.username = username;
-    }
-    public void setBookedTickets(List<Ticket> bookedTickets){
-        this.bookedTickets = bookedTickets;
+    public void setTicketsBooked(List<Ticket> ticketsBooked){
+        this.ticketsBooked = ticketsBooked;
     }
 
 }
